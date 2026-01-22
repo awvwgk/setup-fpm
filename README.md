@@ -28,6 +28,7 @@ __`github-token`__ (*only needed if `fpm-version` is `'latest'` or not specified
 
 __`fpm-version`__ (*optional, default:* see below) the tag corresponding to a Github release from which to fetch the `fpm` binary.
   - If set to `'latest'` then the latest `fpm` release at [fortran-lang/fpm](https://github.com/fortran-lang/fpm/releases/latest) will be substituted. `github-token` must be provided if `fpm-version` is `'latest'`.
+  - If set to `'current'` then the current `fpm` release at [fortran-lang/fpm](https://github.com/fortran-lang/fpm/releases/current) will be substituted.
 
 __`fpm-repository`__ (*optional, default:* `https://github.com/fortran-lang/fpm`) which Github fork to fetch release binaries from.
 
