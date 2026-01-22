@@ -49,5 +49,6 @@ Previous versions default to the latest stable release, which is fetched automat
 | v6.1.0          | latest                |
 | v7              | 0.11.0                |
 | v8              | 0.11.0                |
+| v9              | 0.12.0                |
 
 Note: `fpm` changed asset naming convention starting version `v0.11.0`. So, the `latest` option will not work anymore with versions of `setup-fpm` prior to `v7`. 
