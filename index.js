@@ -153,8 +153,10 @@ async function main(){
 function getFPMFilename(fpmVersion, platform, arch, compiler = '') {
   var filename = 'fpm-';
 
-  // Remove the leading 'v' if it exists
-  filename += fpmVersion.replace('v', '') + '-';
+  // Remove the leading 'v' if it exists if fpmVersion is not equal to 'current'
+  if (fpmVersion != 'current') {
+    filename += fpmVersion.replace('v', '') + '-';
+  }
 
   // Map Node.js arch to FPM arch naming
   let fpmArch = 'x86_64';
