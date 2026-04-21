@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/federico/code/fpm/**)",
+      "Bash(node:*)",
+      "Bash(gh release view:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
