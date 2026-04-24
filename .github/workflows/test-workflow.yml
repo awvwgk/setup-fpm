@@ -23,6 +23,7 @@ jobs:
 
       - name: MacOS system setup
         if: runner.os == 'macOS'
+        # fpm binaries are currently built and linking against gfortran-12 runtime on macOS
         run: |
           brew install gcc@12
 
