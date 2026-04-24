@@ -24,7 +24,7 @@ jobs:
       - name: MacOS system setup
         if: runner.os == 'macOS'
         run: |
-          brew install gcc@13
+          brew install gcc@12
 
       - name: Install dependencies
         run: npm ci
@@ -43,10 +43,10 @@ jobs:
 
       - name: Setup the Fortran compiler
         if: matrix.fpm-version == 'latest'
-        uses: fortran-lang/setup-fortran@v1.6.3
+        uses: fortran-lang/setup-fortran@v1.9.0
         with:
           compiler: gcc
-          version: 13
+          version: 12
 
       - name: Check that all the fpm tests pass
         if: matrix.fpm-version == 'latest'
